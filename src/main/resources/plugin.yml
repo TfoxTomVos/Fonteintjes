@@ -1,0 +1,31 @@
+name: Fountains
+version: '${project.version}'
+main: com.tomvosdev.fountains.Fountains
+api-version: 1.19
+commands:
+  createShow:
+    description: Create a Show
+    permission: fountain.show
+  selectShow:
+    description: Select a Show
+    permission: fountain.show
+  debugShow:
+    description: Turn On/Off Show Debugging
+    permission: fountain.show
+  startShow:
+    description: Starts a show
+    permission: fountain.show
+
+  testFountain:
+    description: Make a test Fountain
+    permission: fountain.test
+  createFountain:
+    description: Create a Show
+    permission: fountain.fountain
+permissions:
+  fountain.fountain:
+    default: op
+  fountain.test:
+    default: op
+  fountain.show:
+    default: op
